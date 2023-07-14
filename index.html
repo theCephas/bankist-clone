@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Bankist App Clone</title>
+
+        <link rel="shortcut icon" type="image/png" href="images/icon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+                tailwind.config = {
+                        theme: {
+                                // fontSize: {
+                                //         '60': '60%',
+                                // },
+                                colors: {
+                                        'primary': '#5ec576',
+                                        'primaryLighter': '#79c98c',
+                                        'secondary': '#ffcb03',
+                                        'tertiary': '#ff585f',
+                                        'primaryDarker': '#4bbb7d',
+                                        'secondaryDarker': '#ffbb00',
+                                        'tertiaryDarker': '#fd424b',
+                                        'primaryOpacity': '#5ec5763a',
+                                        'secondaryOpacity': '#ffcd0331',
+                                        'tertiaryOpacity': '#ff58602d',
+                                        'gradientPrimary1': '#5cd6a8',
+                                        'gradientPrimary2': '#9be15d',
+                                        'gradientSec1': '#ffb003',
+                                        'gradientSec2': '#ffcb03',
+                                        'gradientCancel1': '##e52a5a',
+                                        'gradientCancel2': '#ff585f',
+                                        'hover': '#ced6e0',
+                                        'textcol': '#444',
+                                        'white': '#fff',
+                                        'black': '#000',
+                                        'body': '#f3f3f3',
+                                        'hr': '#d4cfcf',
+                                        'feat': '#666',
+                                },
+                                fontFamily: {
+                                        'bodyFont': ['Poppins', 'sans-serif']
+                                },
+
+                                extend: {
+                                        width: {
+                                                '400': '400px',
+                                                '600': '600px'
+                                        }
+                                }
+                        }
+                }
+        </script>
+</head>
+
+<body class="bg-body font-bodyFont">
+        <header class="bg-body static p-7 px-10 md:px-10 md:flex md:items-center md:justify-between">
+                <div class="flex justify-between items-center">
+                        <span>
+                                <img src="./images/logo.png" class="w-36 cursor-pointer" alt="Bankist Logo">
+                        </span>
+                        <span class="md:hidden block mx-2">
+                                <img src="./images/hamburger.png" name="menu" onclick="Menu(this)" alt="Hamburger menu"
+                                        class="w-12 block cursor-pointer">
+                                <img src="./images/hamburger.png" name="close" onclick="Menu(this)" alt="Hamburger menu"
+                                        class="w-12 cursor-pointer hidden">
+                        </span>
+                </div>
+
+                <ul
+                        class="md:flex md:items-center text-center z-[-0] md:z-auto md:static absolute bg-body w-full left-0 md:w-auto md:py-0 py-6 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+                        <li class="mx-4 my-6 md:my-0">
+                                <a href="#" class="text-sm md:text-xl hover:text-hover duration-500">Features</a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                                <a href="#" class="text-sm md:text-xl hover:text-hover duration-500">Operations</a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                                <a href="#" class="text-sm md:text-xl hover:text-hover duration-500">Testimonials</a>
+                        </li>
+
+                        <button
+                                class="p-3 text-sm md:text-xl mx-4 md:my-0 px-5 rounded-2xl bg-primary hover:bg-primaryOpacity duration-500 transition hover:scale-105">
+                                Open Account
+                        </button>
+                </ul>
+        </header>
+
+        <section class="p-7 py-20 px-10 mt-18 sm:mt-20">
+                <div data-aos="fade-up" data-aos-duration="1000" class="text-textcol md:flex md:justify-center mb-20">
+                        <div class="md:w-[400px] mb-4">
+                                <h1
+                                        class="text-[37.5px] md:tracking-wider tracking-wide sm:text-6xl leading-10 font-bold">
+                                        When
+                                        <span
+                                                class="mb-6 md:mb-8 bg-gradient-to-tl from-gradientPrimary1 to-gradientPrimary2 -skew-x-6 relative z-[-1] px-0 py-1 sm:py-4 inline-block">
+                                                <span>banking</span>
+                                        </span> meets <br />
+                                        <span
+                                                class="mt-6 md:mt-8 bg-gradient-to-tl my-2 from-gradientPrimary1 to-gradientPrimary2 -skew-x-6 relative z-[-1] px-0 py-1 sm:py-4 inline-block">
+                                                <span>minimalist</span>
+                                        </span>
+                                </h1>
+                                <p class="text-[16px] py-4">A simpler banking experience for a simpler life.</p>
+                                <p class="pt-2 text-primary underline underline-offset-4">Learn More &DownArrow;</p>
+                        </div>
+                        <div>
+                                <img src="./images/hero.png" alt="Hero Image" class="md:w-[400px]">
+                        </div>
+                </div>
+        </section>
+
+        <section class="pt-10 sm:pt-20">
+                <hr class="mx-0 px-0 text-hr">
+                <div class="px-10 py-20">
+                        <div class=" md:w-[600px] md:m-auto md:flex md:flex-col md:justify-center ">
+                                <h2 data-aos="fade-up" data-aos-duration="1000"
+                                        class="text-primary text-[13.5px] sm:text-xl py-3">FEATURES</h2>
+                                <p data-aos="fade-up" data-aos-duration="1000"
+                                        class="text-[30px] sm:text-4xl text-black">Everything you need in a modern
+                                        bank and
+                                        more.</p>
+                        </div>
+                </div>
+
+                <section class="md:mx-10">
+                        <section
+                                class="px-10 md:px-20 pb-0 md:pb-8 flex flex-col items-center sm:m-auto sm:grid  sm:grid-rows-1 sm:grid-cols-2">
+                                <div data-aos="fade-up" data-aos-duration="600">
+                                        <img src="./images/digital.jpg" alt="digital-lazy" class="">
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="600"
+                                        class="p-10 md:pb-0 px-0 sm:pl-4 md:pl-20 md:px-4 md:w-[300px]">
+                                        <svg
+                                                class="w-[36px] h-[2.8rem] py-3 rounded-full bg-primaryOpacity fill-primaryDarker">
+                                                <use xlink:href="./images/icons.svg#icon-monitor"></use>
+                                        </svg>
+                                        <h4 class="text-[15px] text-black font-semibold py-4">
+                                                100% digital bank
+                                        </h4>
+                                        <p
+                                                class="text-[11.25px] leading-7 px-0 w-auto md:w-[411px] sm:w-auto text-feat">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias sint
+                                                quos?
+                                                Accusantium a fugiat porro reiciendis saepe quibusdam debitis ducimus.
+                                        </p>
+                                </div>
+                        </section>
+                        <section
+                                class="px-10 md:px-20 pb-0 md:pb-8 flex flex-col-reverse items-center sm:m-auto sm:grid  sm:grid-rows-1 sm:grid-cols-2">
+                                <div data-aos="fade-up" data-aos-duration="600" class="p-10 px-0 sm:pr-11 md:w-[300px]">
+                                        <svg
+                                                class="w-[36px] h-[2.8rem] py-3 rounded-full bg-primaryOpacity fill-primaryDarker">
+                                                <use xlink:href="./images/icons.svg#icon-trending-up"></use>
+                                        </svg>
+                                        <h4 class="text-[15px] text-black font-semibold py-4">
+                                                Watch your money grow
+                                        </h4>
+                                        <p
+                                                class="text-[11.25px] leading-7 px-0 w-auto md:w-[411px] sm:w-auto text-feat">
+                                                Nesciunt quos autem dolorum voluptates cum dolores dicta fuga inventore
+                                                ab?
+                                                Nulla incidunt eius numquam sequi iste pariatur quibusdam!
+                                        </p>
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="600">
+                                        <img src="./images/grow.jpg" alt="grow" class="">
+                                </div>
+
+                        </section>
+                        <section
+                                class="px-10 md:px-20 pb-0 md:pb-8 flex flex-col items-center sm:m-auto sm:grid  sm:grid-rows-1 sm:grid-cols-2">
+                                <div data-aos="fade-up" data-aos-duration="600">
+                                        <img src="./images/card.jpg" alt="Credit card" class="">
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="600"
+                                        class="p-10 md:pb-0 px-0 sm:pl-4 md:pl-20 md:px-4 md:w-[300px]">
+                                        <svg
+                                                class="w-[36px] h-[2.8rem] py-3 rounded-full bg-primaryOpacity fill-primaryDarker">
+                                                <use xlink:href="./images/icons.svg#icon-credit-card"></use>
+                                        </svg>
+                                        <h4 class="text-[15px] text-black font-semibold py-4">
+                                                Free debit card included
+                                        </h4>
+                                        <p
+                                                class="text-[11.25px] leading-7 px-0 w-auto md:w-[411px] text-feat">
+                                                Quasi, fugit in cumque cupiditate reprehenderit debitis animi enim
+                                                eveniet consequatur odit quam quos possimus assumenda dicta fuga
+                                                inventore ab.
+                                        </p>
+                                </div>
+                        </section>
+                </section>
+                <hr class="mx-0 px-0 text-hr my-20">
+
+                <section class="px-10">
+                        <div class="py-20">
+                                <div class=" md:w-[600px] md:m-auto md:flex md:flex-col md:justify-center ">
+                                        <h4 data-aos="fade-up" data-aos-duration="1000"
+                                                class="text-primaryDarker text-[13.5px] sm:text-xl py-3">OPERATIONS</h4>
+                                        <p data-aos="fade-up" data-aos-duration="1000"
+                                                class="text-[30px] sm:text-4xl text-black">Everything as simple as
+                                                possible, but no simpler.</p>
+                                </div>
+                        </div>
+
+                        <section class="px-10 py-12 mb-20 bg-white w-auto sm:w-[600px] m-auto">
+                                <div class="flex flex-col m-auto items-center sm:flex sm:flex-row sm:justify-around mt-[-46px]">
+                                        <button
+                                                class="text-sm text-black shadow-lg hover:bg-secondary bg-secondaryDarker  rounded-xl p-3 px-4 w-[300px] md:w-[170px]">01
+                                                Instant Transfers</button>
+                                        <button
+                                        class="text-sm text-black my-5 sm:my-0 shadow-lg hover:bg-primary bg-primaryDarker  rounded-xl p-3 mx-0 sm:mx-10 w-[300px] md:w-[170px]">02
+                                                Instant Loans
+                                        </button>
+                                        <button
+                                        class="text-sm text-black hover:bg-tertiary shadow-lg bg-tertiaryDarker  rounded-xl p-3 px-4 w-[300px] md:w-[170px]">03
+                                                Instant Closing
+                                        </button>
+                                </div>
+                        </section>
+                </section>
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+                function Menu(e) {
+                        let list = document.querySelector('ul');
+                        e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+                }
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+                AOS.init();
+        </script>
+</body>
+
+</html>
