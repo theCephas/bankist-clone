@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
                 tailwind.config = {
@@ -199,22 +200,24 @@
                 </section>
                 <hr class="mx-0 px-0 text-hr my-20">
 
-                <section class="px-10">
+                <section class="px-10 pb-20">
                         <div class="py-20">
                                 <div class=" md:w-[600px] md:m-auto md:flex md:flex-col md:justify-center ">
                                         <h4 data-aos="fade-up" data-aos-duration="1000"
-                                                class="text-primaryDarker text-[13.5px] sm:text-xl py-3">OPERATIONS</h4>
+                                                class="text-primaryDarker text-[13.5px] sm:text-xl py-3 font-semibold">
+                                                OPERATIONS</h4>
                                         <p data-aos="fade-up" data-aos-duration="1000"
                                                 class="text-[30px] sm:text-4xl text-black">Everything as simple as
                                                 possible, but no simpler.</p>
                                 </div>
                         </div>
 
-                        <section class="px-10 py-12 mb-20 bg-white w-auto m-auto md:w-[600px]" data-aos="fade-up" data-aos-duration="800">
+                        <section class="px-10 py-12 mb-20 bg-white w-auto m-auto md:w-[600px]" data-aos="fade-up"
+                                data-aos-duration="800">
                                 <div
                                         class="p-0 flex flex-col m-auto items-center sm:flex sm:flex-row sm:justify-around mt-[-46px]">
                                         <button id="one-btn"
-                                                class="text-sm text-black active:scale-110 hover:bg-secondary shadow-lg bg-secondaryDarker  rounded-xl p-3 px-10 w-[300px] md:w-[170px] px-4 ">01
+                                                class="text-sm text-black hover:bg-secondary shadow-lg bg-secondaryDarker  rounded-xl p-3 px-10 w-[300px] md:w-[170px] px-4 ">01
                                                 Instant Transfers</button>
                                         <button id="two-btn"
                                                 class="text-sm text-black my-5 sm:my-0 shadow-lg hover:bg-primary bg-primaryDarker  rounded-xl p-3 w-[300px] md:w-[170px] mx-0 sm:mx-10 ">02
@@ -269,47 +272,178 @@
                                                 </p>
                                         </div>
                                 </div>
-                                <!-- <div class="mt-12 flex justify-between hidden" id="two">
-                                        <div>
-                                                <svg
-                                                        class="w-[4rem] h-[4rem] p-4 rounded-full fill-secondary bg-secondaryOpacity">
-                                                        <use xlink:href="./images/icons.svg#icon-upload"></use>
-                                                </svg>
+                        </section>
+                </section>
+                <hr class="mx-0 px-0 text-hr my-20">
+
+                <section class="px-10 pb-20">
+                        <div class="py-20">
+                                <div class=" md:w-[600px] md:m-auto md:flex md:flex-col md:justify-center ">
+                                        <h4 data-aos="fade-up" data-aos-duration="1000"
+                                                class="text-primaryDarker font-semibold text-[13.5px] sm:text-xl py-3">
+                                                NOT SURE YET?
+                                        </h4>
+                                        <p data-aos="fade-up" data-aos-duration="1000"
+                                                class="text-[30px] sm:text-4xl text-black">Millions of Bankists are
+                                                already making their lives simpler.</p>
+                                </div>
+                        </div>
+
+                        <div id="default-carousel" class="relative w-[600px] m-auto hidden md:block"
+                                data-carousel="static" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="relative overflow-hidden rounded-lg h-[30rem]">
+                                        <div class="flex justify-center m-auto hidden" data-carousel-item>
+                                                <div class="">
+                                                        <img src="./images/text.png" alt="Quotes" class="w-[8rem]">
+                                                </div>
+                                                <blockquote class="mt-16 w-[40rem] ">
+                                                        <h6 class="text-2xl pb-4 text-black">Best financial decision
+                                                                ever!
+                                                        </h6>
+                                                        <p class="text-feat leading-7">Lorem ipsum dolor sit, amet
+                                                                consectetur adipisicing elit.
+                                                                Accusantium quas quisquam non? Quas voluptate nulla
+                                                                minima deleniti optio ullam nesciunt, numquam corporis
+                                                                et asperiores laboriosam sunt, praesentium suscipit
+                                                                blanditiis. Necessitatibus id alias reiciendis,
+                                                                perferendis facere pariatur dolore veniam autem esse non
+                                                                voluptatem saepe provident nihil molestiae.</p>
+
+                                                        <address class="flex mt-6 ml-4">
+                                                                <img src="./images/user-1.jpg" alt="User 1"
+                                                                        class="w-[48px] rounded-full">
+                                                                <div class="pl-4 mt-1">
+                                                                        <h6 class="text-black py-1">Aarav Lynn</h6>
+                                                                        <p class="text-feat">San Francisco, USA</p>
+                                                                </div>
+                                                        </address>
+                                                </blockquote>
                                         </div>
-                                        <div class="pl-8 pt-2 md:pt-4">
-                                                <h5 class="text-black text-[16px] pb-3">Tranfser money to anyone, instantly!
-                                                        No fees, no BS.</h5>
-                                                <p class="text-feat text-[12px] leading-8">Lorem ipsum dolor sit amet, consectetur
-                                                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                        consequat.</p>
+
+                                        <div class="flex justify-center m-auto hidden" data-carousel-item>
+                                                <div class="">
+
+                                                        <img src="./images/text.png" alt="Quotes" class="w-[8rem]">
+                                                </div>
+                                                <blockquote class="mt-16 w-[40rem] ">
+                                                        <h6 class="text-2xl pb-4 text-black">The last step to becoming a
+                                                                complete minimalist
+                                                        </h6>
+                                                        <p class="text-feat leading-7">Quisquam itaque deserunt ullam,
+                                                                quia ea repellendus provident, ducimus neque ipsam modi
+                                                                voluptatibus doloremque, corrupti laborum. Incidunt
+                                                                numquam perferendis veritatis neque repellendus. Lorem,
+                                                                ipsum dolor sit amet consectetur adipisicing elit. Illo
+                                                                deserunt exercitationem deleniti.</p>
+
+                                                        <address class="flex mt-6 ml-4">
+                                                                <img src="./images/user-2.jpg" alt="User 2"
+                                                                        class="w-[48px] rounded-full">
+                                                                <div class="pl-4 mt-1">
+                                                                        <h6 class="text-black py-1">Miyah Miles</h6>
+                                                                        <p class="text-feat">London, UK</p>
+                                                                </div>
+                                                        </address>
+                                                </blockquote>
+                                        </div>
+
+                                        <div class="flex justify-center m-auto hidden" data-carousel-item>
+                                                <div class="">
+
+                                                        <img src="./images/text.png" alt="Quotes" class="w-[8rem]">
+                                                </div>
+                                                <blockquote class="mt-16 w-[40rem] ">
+                                                        <h6 class="text-2xl pb-4 text-black">Finally free from
+                                                                old-school banks
+                                                        </h6>
+                                                        <p class="text-feat leading-7">Debitis, nihil sit minus suscipit
+                                                                magni aperiam vel tenetur incidunt commodi architecto
+                                                                numquam omnis nulla autem, necessitatibus blanditiis
+                                                                modi similique quidem. Odio aliquam culpa dicta beatae
+                                                                quod maiores ipsa minus consequatur error sunt, deleniti
+                                                                saepe aliquid quos inventore sequi. Necessitatibus id
+                                                                alias reiciendis, perferendis facere.</p>
+
+                                                        <address class="flex mt-6 ml-4">
+                                                                <img src="./images/user-3.jpg" alt="User 3"
+                                                                        class="w-[48px] rounded-full">
+                                                                <div class="pl-4 mt-1">
+                                                                        <h6 class="text-black py-1">Francisco Gomes</h6>
+                                                                        <p class="text-feat">Lisbon, Portugal</p>
+                                                                </div>
+                                                        </address>
+                                                </blockquote>
                                         </div>
                                 </div>
-                                <div class="mt-12 flex justify-between hidden" id="three">
-                                        <div>
-                                                <svg
-                                                        class="w-[4rem] h-[4rem] p-4 rounded-full fill-secondary bg-secondaryOpacity">
-                                                        <use xlink:href="./images/icons.svg#icon-upload"></use>
-                                                </svg>
-                                        </div>
-                                        <div class="pl-8 pt-2 md:pt-4">
-                                                <h5 class="text-black text-[16px] pb-3">Tranfser money to anyone, instantly!
-                                                        No fees, no BS.</h5>
-                                                <p class="text-feat text-[12px] leading-8">Lorem ipsum dolor sit amet, consectetur
-                                                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                                                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                        consequat.</p>
-                                        </div>
-                                </div> -->
-                        </section>
 
+                                <div class="flex absolute mt-6 bottom-2 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                                        <button type="button"
+                                                class="w-3 h-3 rounded-full active:bg-black/30 dark:bg-gray-800/30"
+                                                aria-current="true" aria-label="Slide 1"
+                                                data-carousel-slide-to="0"></button>
+                                        <button type="button" class="w-3 h-3 text-gray-600 rounded-full"
+                                                aria-current="false" aria-label="Slide 2"
+                                                data-carousel-slide-to="1"></button>
+                                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
+                                                aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                                </div>
+                                <!-- Slider controls -->
+                                <button type="button"
+                                        class="flex absolute mt-8 top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                                        data-carousel-prev>
+                                        <span
+                                                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-white/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                                                <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-gray-800"
+                                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                                </svg>
+                                                <span class="hidden">Previous</span>
+                                        </span>
+                                </button>
+                                <button type="button"
+                                        class="flex absolute mt-8 top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                                        data-carousel-next>
+                                        <span
+                                                class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-white/30 group-hover:bg-white/50 dark:group-hover:bg-white/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-white/70 group-focus:outline-none">
+                                                <svg class="w-5 h-5 text-black sm:w-6 sm:h-6 dark:text-black"
+                                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                                </svg>
+                                                <span class="hidden">Next</span>
+                                        </span>
+                                </button>
+                        </div>
                 </section>
+                
         </section>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <footer class="bg-[#37383d] py-20">
+                <section  class=" px-10 text-center w-[600px] m-auto flex flex-col justify-center items-center">
+                        <p data-aos="fade-up" data-aos-duration="600" class="text-[30px] text-white pb-10">The best day to join Bankist was one year ago. The second best is today!</p>
+                        <button data-aos="fade-up" data-aos-duration="600" class="text-[12px] text-black bg-primary hover:bg-primaryLighter p-5 px-7 rounded-xl">Open your free account today!</button>
+                </section>
 
+                <hr class="mx-0 px-0 text-hr my-20">
+
+                <section data-aos="fade-up" data-aos-duration="600" class="w-[600px] px-10 flex justify-around text-center items-center m-auto">
+                        <p class="text-white cursor-pointer">About</p>
+                        <p class="text-white cursor-pointer px-4">Pricing</p>
+                        <p class="text-white cursor-pointer">Terms of Use</p>
+                        <p class="text-white cursor-pointer px-4">Privacy Policy</p>
+                        <p class="text-white cursor-pointer">Careers</p>
+                        <p class="text-white cursor-pointer px-4">Blog</p>
+                        <p class="text-white cursor-pointer">Contact Us</p>
+                </section>
+                <div data-aos="fade-up" data-aos-duration="600" class="flex items-center m-auto w-20 pt-20">
+                        <img src="./images/icon.png"  alt="Logo">
+                </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
         <script>
                 function Menu(e) {
                         let list = document.querySelector('ul');
