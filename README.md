@@ -15,4 +15,4 @@ You can view the original bankist bank landing page via this link: https://banki
 
 You can also view mine here: https://bankist-clone.vercel.app/
 
-Thank YOU! 🚀
+Thank YOU!🚀
